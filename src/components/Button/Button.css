@@ -1,0 +1,30 @@
+.button{
+    --bg-color : var(--color-accent);
+    display: inline-flex;
+    align-items: center;
+    min-height: 52px;
+    padding: var(--space-s) var(--space-l);
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--color-white);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.button:hover{
+    --bg-color : var(--color-accent-hover);
+}
+.button:active{
+    --bg-color : var(--color-accent-active);
+}
+.button:disabled{
+    pointer-events: none;
+    cursor: default;
+}
+.button_disabled{
+    --bg-color : var(--color-light-grey);
+}
+.button .button_loader{
+    flex-shrink: 0;
+    margin-right: 8px;
+    color: currentColor;
+}
